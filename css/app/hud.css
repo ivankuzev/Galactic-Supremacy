@@ -1,40 +1,135 @@
-.gs-topHUD {
+.gs-hud-bottom{
     position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 800px;
-    height: 40px;
-    color: #e4f0f3;
-    background: rgba(41, 58, 69, .4);
-    border-radius: 5px;
-    padding-left: 10px;
+    bottom: 0px; 
+    width: 100%;
+    height:100px;
 }
-.gs-topHUD a {
-    text-decoration: none;
-    color: inherit;
-    font-family: 'Signika', sans-serif;
-    font-size: 14px;
-    vertical-align: bottom;
-    
+.gs-hud-chat{
+    position:absolute;
+    right:0;
+    width:30%;
+    height:100%;
+    background-color: red;
+}
+.gs-hud-actions{
+    position:absolute;
+    left:0;
+    width:70%;
+    height:100%;
+    min-width: 300px;
+    background-color: blue;
+}
+.gs-hud-menu{
+    position: absolute;
+    height: 350px;
+    width:50px;
+    background-color: magenta;
+    left:0px;
+    top:0px;
+}
+.gs-hud-zoomslider{
+    position: absolute;
+    right:0px;
+    bottom: 100px;
+    width:40px;
+    height:350px;
+    background-color: blueviolet;
+}
+.gs-hud-status{
+    position: absolute;
+    top:0;
+    left:10%;
+    width:80%;
+    height:40px;
+    background-color: yellow;
 }
 
-.gs-topHUD-icons {
-    list-style-type: none;
+
+.gs-hud-menu-item div{
+    position:absolute;
 }
 
-.gs-topHUD-icons li {
-    width: 80px;
-    display: inline;
+.gs-hud-menu-item {
+    position:absolute;
+    width:50px;
+    height:50px;
+}
+.gs-hud-menu-item-content{
+    width:100%;
+    height:100%;
+}
+.gs-hud-menu-item-text{
+   
+    z-index: 6;
+    color:white;
+    font-size: 15px;
+    text-align:center;
+    width:40px;
+    height:20px;
+    margin:auto;
+
+}
+.gs-hud-menu-item-background {
+    width:100%;
+    height:100%;
+    opacity: 0.5;
+    z-index: -1;
+    background-color: darkblue;
 }
 
-.gs-topHUDIconImg {
-    display: block;
-    width: 30px;
-    height: 30px;
-    background: red;
-    display: inline-block;
+.gs-hud-menu-item-topleft{
+    width:50px;
+    height:50px;
+    z-index: 5;
+    background-image:url("hud/topleft.png");
 }
 
-.gs-topHUDIconImg-mail {
-    background: url(../../images/icons/email.png) no-repeat;
+.gs-hud-menu-item-topright{
+    width:20px;
+    height:20px;
+    z-index: 5;
+    right:0px;
+    background-image:url("hud/topright.png");
+}
+.gs-hud-menu-item-bottomleft{   
+    width:20px;
+    height:20px;
+    z-index: 5;
+    bottom:0px;
+    background-image:url("hud/bottomleft.png");
+}
+.gs-hud-menu-item-bottomright{
+    width:50px;
+    height:50px;
+    bottom:0px;
+    right:0px;
+    z-index: 5;
+    background-image:url("hud/bottomright.png");
+}
+
+.gs-hud-menu-item-topborder{
+    height:10px;
+    width:100%;
+    z-index: 4;
+    background-image:url("hud/linetop.png");
+}
+.gs-hud-menu-item-bottomborder{
+    height:10px;
+    width:100%;
+    z-index: 4;
+    bottom:0px;
+    background-image:url("hud/linebottom.png");
+}
+.gs-hud-menu-item-leftborder{
+    width:10px;
+    height:100%;
+    z-index: 4;
+    background-image:url("hud/lineleft.png");
+}
+.gs-hud-menu-item-rightborder{
+    width:10px;
+    height:100%;
+    right:0px;
+    z-index: 4;
+    background-image:url("hud/lineright.png");
 }

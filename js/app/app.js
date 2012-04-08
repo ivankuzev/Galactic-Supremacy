@@ -1,26 +1,11 @@
 $(document).ready(function() {
     
     // initialize game
-   App.Res = new App.Resources(App.Controllers.App);
+    
+    //todo need to make changes so that classes are with Capital letters but instance of them are not
+    
+    App.Res = new App.Resources(App.Controllers.App);
+    App.hud = new App.Hud.Manager($("body"));
 
-    $('a').hover(function(e) {
-        e.preventDefault();
-    });
-    
-    
-    $('.gs-menuMain').click(function() {
-        $('.gs-subMenu').show();   
-    });
-    
-    $('.gs-zoomSlider').draggable({
-        containment: 'parent',
-        grid: [0, 10],
-        scroll: false
-    });
-    
-    
-    $('.gs-dialog').draggable({
-        handle: $('.gs-dialogHeader')    
-    });
-    
+
 });

@@ -6,7 +6,8 @@ window.App = {
         Ships: {}
     },
     Objects: {},
-    Parts: {}
+    Parts: {},
+    Hud:{}
 }
 
 
