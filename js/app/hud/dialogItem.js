@@ -84,8 +84,8 @@
     dialogItem.prototype.close = function(){
         this.hideContent(function(){
             this.$container.animate({
-                width:50,
-                height:50
+                width:30,
+                height:30
             });   
             this.$container.animate(this.closedPosition,"fast", $.proxy(function(){
                 this.closed = true;
@@ -104,7 +104,7 @@
     }
     dialogItem.prototype.halfClose = function(callback){
         this.$container.stop().animate({
-            width:50
+            width:30
         },$.proxy(function(){this.$text.hide()},this));   
     }
     dialogItem.prototype.showContent = function(callback){
