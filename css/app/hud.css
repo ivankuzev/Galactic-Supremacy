@@ -23,7 +23,6 @@
     position: absolute;
     height: 350px;
     width:50px;
-    background-color: magenta;
     left:0px;
     top:0px;
 }
@@ -44,7 +43,6 @@
     background-color: yellow;
 }
 
-
 .gs-hud-menu-item div{
     position:absolute;
 }
@@ -59,15 +57,22 @@
     height:100%;
 }
 .gs-hud-menu-item-text{
-   
-    z-index: 6;
+    width:150px;
+    height:50px;
+    font-size: 30px;
+    top:0px;
+    left:50px;
     color:white;
-    font-size: 15px;
-    text-align:center;
-    width:40px;
-    height:20px;
-    margin:auto;
-
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+}
+.gs-hud-menu-item-icon{
+    z-index: 6;
+    width: 50px;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .gs-hud-menu-item-background {
     width:100%;
@@ -78,29 +83,29 @@
 }
 
 .gs-hud-menu-item-topleft{
-    width:50px;
-    height:50px;
+    width:25px;
+    height:25px;
     z-index: 5;
     background-image:url("hud/topleft.png");
 }
 
 .gs-hud-menu-item-topright{
-    width:20px;
-    height:20px;
+    width:25px;
+    height:25px;
     z-index: 5;
     right:0px;
     background-image:url("hud/topright.png");
 }
 .gs-hud-menu-item-bottomleft{   
-    width:20px;
-    height:20px;
+    width:25px;
+    height:25px;
     z-index: 5;
     bottom:0px;
     background-image:url("hud/bottomleft.png");
 }
 .gs-hud-menu-item-bottomright{
-    width:50px;
-    height:50px;
+    width:25px;
+    height:25px;
     bottom:0px;
     right:0px;
     z-index: 5;

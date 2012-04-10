@@ -11,7 +11,7 @@
         this.addMenuItem(new App.Hud.DialogItem("icon1.png",{
             top:0,
             left:0
-        },{width:1100,height:800},$content))
+        },{width:1100,height:800},$content,"Info"))
         this.addMenuItem(new App.Hud.DialogItem("icon2.png",{
             top:50,
             left:0
